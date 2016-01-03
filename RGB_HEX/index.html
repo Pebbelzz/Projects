@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RBG to HEX</title>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<section class="rgbSelectors">
+	<div id="redRange">
+	  <span class="colorName">Red</span>
+		<input type="range" name="red" id="r" min="0" max="255" value="0">
+		<span id="redSlideValue"></span>
+	</div>
+
+	<div id="greenRange">
+	  <span class="colorName">Green</span>
+		<input type="range" name="green" id="g" min="0" max="255" value="0">
+		<span id="greenSlideValue"></span>
+	</div>
+	<div>
+	  
+	<div id="blueRange">
+	  <span class="colorName">Blue</span>
+		<input type="range" name="blue" id="b" min="0" max="255" value="0">
+		<span id="blueSlideValue"></span>
+	</div>
+	  <button id="RGB_Value" onclick="rgbValue()">RGB Value</button>
+	</div>
+	<div id="rgbValueBox"></div>
+</section>
+</body>
+</html>
