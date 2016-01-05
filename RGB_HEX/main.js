@@ -1,9 +1,9 @@
 //gets the values from the sliders 
 
 function rgbValue(r, g, b){
-   r = document.getElementById("r").value;
-   g = document.getElementById("g").value;
-   b = document.getElementById("b").value;
+  r = document.getElementById("r").value;
+  g = document.getElementById("g").value;
+  b = document.getElementById("b").value;
    
    //checks to make sure function is grabbing values from sliders
   console.log(r +" "+ g +" "+ b);
@@ -17,37 +17,20 @@ function rgbValue(r, g, b){
   var rgbString = "rgb (" + r + ", " + g + ", " + b + ")";
   document.getElementById("rgbValueBox").innerHTML = rgbString;
   console.log(rgbString);
-  
-  //converts individual RGB to HEX 
-  function getRString(){
-    if (r<10){
-      var rString = "0" + r.toString();
-    }
-    else {
-      var rString = r.toString();
-    }
-  }
-  
-  function getGString(){
-    if (g<10){
-      var gString = "0" + g.toString();
-    }
-    else{
-      var gString = g.toString();
-    }
-  }
-  
-  function getBString(){
-    if (b<10){
-      var bString = "0" + b.toString();
-    }
-    else{
-      var bString = b.toString();
-    }
-  }
-  
-  console.log(rString + gString + bString);
-  
-  //var rHex = r + g + b.toString(16);
-  //console.log(rHex);
+};
+
+
+//converts RGB to HEX
+function rgbToHex(r, g, b) {
+  r = document.getElementById("r").value;
+  g = document.getElementById("g").value;
+  b = document.getElementById("b").value;
+
+  var HEXValue = ("#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1));
+  console.log(HEXValue);
+  document.getElementById("HEXValueBox").innerHTML = HEXValue;
 }
+
+  
+
+   
