@@ -25,10 +25,13 @@ function rgbToHex(r, g, b) {
   r = document.getElementById("r").value;
   g = document.getElementById("g").value;
   b = document.getElementById("b").value;
-
-  var HEXValue = ("#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1));
-  console.log(HEXValue);
-  document.getElementById("HEXValueBox").innerHTML = HEXValue;
+  
+  var rHex = parseInt(r)
+  var gHex = parseInt(g)
+  var bHex = parseInt(b)
+  
+  console.log ("#" + ((1 << 24) + (rHex << 16) + 
+              (gHex << 8) + bHex).toString(16).slice(1));
 }
 
   
