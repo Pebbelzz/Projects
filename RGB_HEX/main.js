@@ -30,8 +30,9 @@ function rgbToHex(r, g, b) {
   var gHex = parseInt(g)
   var bHex = parseInt(b)
   
-  console.log ("#" + ((1 << 24) + (rHex << 16) + 
-              (gHex << 8) + bHex).toString(16).slice(1));
+  var hexColor = ("#" + ((1 << 24) + (rHex << 16) + 
+                (gHex << 8) + bHex).toString(16).slice(1));
+  document.getElementById("HEXValueBox").innerHTML = hexColor;
 }
 
   
