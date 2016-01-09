@@ -9,27 +9,48 @@
 	<section class="rgbSelectors">
 		<div id="redRange">
 		  <span class="colorName">Red</span>
-			<input type="range" name="red" id="r" min="0" max="255" value="0">
+			<input type="range" name="red" id="r" min="0" max="255" value="0" oninput="showRedVal(this.value)" onchange="showVal(this.value)">
+			
 			<span id="redSlideValue"></span>
 		</div>
 
 		<div id="greenRange">
 		  <span class="colorName">Green</span>
-			<input type="range" name="green" id="g" min="0" max="255" value="0">
+			<input type="range" name="green" id="g" min="0" max="255" value="0" oninput="showGreenVal(this.value)" onchange="showVal(this.value)">
+			
 			<span id="greenSlideValue"></span>
 		</div>
 		<div>
 		  
 		<div id="blueRange">
 		  <span class="colorName">Blue</span>
-			<input type="range" name="blue" id="b" min="0" max="255" value="0">
+			<input type="range" name="blue" id="b" min="0" max="255" value="0" oninput="showBlueVal(this.value)" onchange="showVal(this.value)">
 			<span id="blueSlideValue"></span>
-		</div>
-		  <button id="RGB_Value" onclick="rgbValue(); rgbToHex();">RGB Value</button>
+			
 		</div>
 
-		<div id="rgbValueBox"></div>
-		<div id="HEXValueBox"></div>
+		<div id="rgbValueBox">
+			<span class="rgbText">RGB (</span>
+			<span id="rSpanValue">00,</span>
+			<span id="gSpanValue">00,</span>
+			<span id="bSpanValue">00</span>
+			<span class="rgbTextClosing">)</span>
+		</div>
+		
+		<div id="HexTestAuto">
+			<span id="redHexSpan">#00</span>
+			<span id="greenHexSpan">00</span>
+			<span id="blueHexSpan">00</span>	
+		</div>
+
+		  <!--<button id="RGB_Value" onclick="rgbValue(); rgbToHex();">RGB Value</button> -->
+
+
+		</div>
+
+
+
+		
 	</section>
 </div>
 </body>
