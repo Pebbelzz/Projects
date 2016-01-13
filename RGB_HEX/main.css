@@ -16,3 +16,9 @@
 .BlueSelector{
 	color: blue;
 }
+
+.colorName{
+	position: relative;
+	width: 25%;
+	
+}
