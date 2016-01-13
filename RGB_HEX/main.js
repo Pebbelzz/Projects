@@ -3,43 +3,38 @@
 function showRedVal(redValue){
   document.getElementById("redSlideValue").innerHTML = redValue;
   document.getElementById("rSpanValue").innerHTML = redValue + ",";
-  var rHex = parseInt(redValue);
-  var rHex = rHex.toString(16).toUpperCase();
-  if(rHex.length > 1){
-  document.getElementById("redHexSpan").innerHTML = "#" + rHex;
-  }
-  else{
-    document.getElementById("redHexSpan").innerHTML = "#0" + rHex;
-  }
 }
 
 
 function showGreenVal(greenValue){
   document.getElementById("greenSlideValue").innerHTML = greenValue;
   document.getElementById("gSpanValue").innerHTML = greenValue + ",";
-  var gHex = parseInt(greenValue);
-  var gHex = gHex.toString(16).toUpperCase();
-  if(gHex.length > 1){
-    document.getElementById("greenHexSpan").innerHTML = gHex;
-  }
-  else{
-    document.getElementById("greenHexSpan").innerHTML = "0" + gHex;
-  }
 }
 
 
 function showBlueVal(blueValue){
   document.getElementById("blueSlideValue").innerHTML = blueValue;
   document.getElementById("bSpanValue").innerHTML = blueValue + ",";
-  var bHex = parseInt(blueValue);
-  var bHex = bHex.toString(16).toUpperCase();
+}
 
-  if(bHex.length > 1){
-    document.getElementById("blueHexSpan").innerHTML = bHex;
-  }
-  else{
-    document.getElementById("blueHexSpan").innerHTML = "0" + bHex;
-  }
+
+//grabs rgb values on input and converts them to HEX color code
+//also changes background as sliders are moved
+function rgbToHex(r, g, b) {
+  r = document.getElementById("r").value;
+  g = document.getElementById("g").value;
+  b = document.getElementById("b").value;
+//change rgb values to integers
+  var rHex = parseInt(r)
+  var gHex = parseInt(g)
+  var bHex = parseInt(b)
+//puts Hex vars into HEX format eg #00FF00
+  var hexColor = ("#" + ((1 << 24) + (rHex << 16) + 
+                (gHex << 8) + bHex).toString(16).slice(1).toUpperCase());
+  document.getElementById("HEXValueBox").innerHTML = hexColor;
+//changes background color to HEX value
+
+  document.body.style.backgroundColor = hexColor;
 }
 
 /*
@@ -57,26 +52,12 @@ function rgbValue(r, g, b){
   
   console.log(rgbString);
 };
-
-
-
-//converts RGB to HEX
-function rgbToHex(r, g, b) {
-  r = document.getElementById("r").value;
-  g = document.getElementById("g").value;
-  b = document.getElementById("b").value;
-
-//change rgb values to integers
-  var rHex = parseInt(r)
-  var gHex = parseInt(g)
-  var bHex = parseInt(b)
-
-//puts Hex vars into HEX format eg #00FF00
-  var hexColor = ("#" + ((1 << 24) + (rHex << 16) + 
-                (gHex << 8) + bHex).toString(16).slice(1).toUpperCase());
-  document.getElementById("HEXValueBox").innerHTML = hexColor;
-}
 */
+
+
+
+
+
   
 
    

@@ -1,0 +1,18 @@
+#MainColorBox{
+	background-color: #E1E2E1;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+.RedSelector{
+	color: red;
+}
+.GreenSelector{
+	color: green;
+}
+.BlueSelector{
+	color: blue;
+}
