@@ -1,12 +1,22 @@
 #MainColorBox{
 	background-color: #E1E2E1;
-	width: 300px;
+	width: 320px;
 	height: 300px;
 	position: relative;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
+	border-radius: 10%;
 }
+.rgbSelectors{
+	margin-top: 50px;
+}
+
+.RedSelector, .GreenSelector, .BlueSelector{
+	font-weight: bold;
+	margin-right: 20px;
+}
+
 .RedSelector{
 	color: red;
 }
@@ -20,5 +30,34 @@
 .colorName{
 	position: relative;
 	width: 25%;
-	
+}
+
+.colorValues{
+	padding-top: 20px;
+}
+
+#rgbValueBox{
+	padding: 10px;
+}
+
+.redRange, .greenRange, .blueRange{
+	position: relative;
+	display: inline;
+}
+
+.colorName{
+	width: 75px;
+	text-align: center;
+}
+
+.slider{
+	width: 150px;
+	text-align: center;
+}
+
+.value{
+	width: 75px;
+}
+.redRow, .greenRow, .blueRow{
+	padding-top: 20px;
 }

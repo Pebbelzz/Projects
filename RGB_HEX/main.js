@@ -37,22 +37,7 @@ function rgbToHex(r, g, b) {
   document.body.style.backgroundColor = hexColor;
 }
 
-/*
-// first function not currently using
 
-//gets the values from the sliders 
-function rgbValue(r, g, b){
-  r = document.getElementById("r").value;
-  g = document.getElementById("g").value;
-  b = document.getElementById("b").value;   
-   //checks to make sure function is grabbing values from sliders
-  console.log(r +" "+ g +" "+ b);  
-  //places rgb values into string and writes to DOM
-  var rgbString = "rgb (" + r + ", " + g + ", " + b + ")";
-  
-  console.log(rgbString);
-};
-*/
 
 
 
