@@ -17,7 +17,6 @@ function showBlueVal(blueValue){
   document.getElementById("bSpanValue").innerHTML = blueValue + ",";
 }
 
-
 //grabs rgb values on input and converts them to HEX color code
 //also changes background as sliders are moved
 function rgbToHex(r, g, b) {
@@ -33,7 +32,6 @@ function rgbToHex(r, g, b) {
                 (gHex << 8) + bHex).toString(16).slice(1).toUpperCase());
   document.getElementById("HEXValueBox").innerHTML = hexColor;
 //changes background color to HEX value
-
   document.body.style.backgroundColor = hexColor;
 }
 
