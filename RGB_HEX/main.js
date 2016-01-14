@@ -14,7 +14,7 @@ function showGreenVal(greenValue){
 
 function showBlueVal(blueValue){
   document.getElementById("blueSlideValue").innerHTML = blueValue;
-  document.getElementById("bSpanValue").innerHTML = blueValue + ",";
+  document.getElementById("bSpanValue").innerHTML = blueValue;
 }
 
 //grabs rgb values on input and converts them to HEX color code
