@@ -1,7 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Righteous);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
 
-
 #MainColorBox{
 	background-color: #E1E2E1;
 	width: 320px;
@@ -10,8 +9,9 @@
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
-	border-radius: 15%;
+	border-radius: 5%;
 }
+
 .rgbSelectors{
 	margin-top: 50px;
 	margin-bottom: 20px;
@@ -27,9 +27,11 @@
 .RedSelector{
 	color: red;
 }
+
 .GreenSelector{
 	color: green;
 }
+
 .BlueSelector{
 	color: blue;
 }
@@ -68,6 +70,7 @@
 .value{
 	width: 75px;
 }
+
 .redRow, .greenRow, .blueRow{
 	padding-top: 20px;
 }
